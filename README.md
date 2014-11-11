@@ -1,4 +1,5 @@
 usabilityeval
 =============
-Team Members: 
+Team Members:
 1. May Ng
+2. Jane Zhao
