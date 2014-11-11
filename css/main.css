@@ -1,0 +1,13 @@
+#sidebar {
+	position: fixed;
+	overflow: hidden;
+	float: left;	
+	height: 100%;
+	width: 100%;
+}
+
+#main_content {
+	float: right;
+	height: 100%;
+	width: 100%;
+}
