@@ -49,6 +49,15 @@
 
 /* Sidebar Styles */
 
+.sidebar-brand a img {
+    height: 100%;
+    width: 90%;
+}
+
+.sidebar-brand:hover {
+    background-color:#E8E8E8;
+}
+
 .sidebar-nav {
     position: absolute;
     top: 0;
@@ -63,16 +72,18 @@
     line-height: 40px;
 }
 
+.sidebar-nav li:hover {
+    background: #D3D3D3;
+}
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
-    color: #999999;
+    color: #428BCA;
 }
 
 .sidebar-nav li a:hover {
     text-decoration: none;
-    color: #fff;
-    background: rgba(255,255,255,0.2);
+    color: #428BCA;
 }
 
 .sidebar-nav li a:active,
