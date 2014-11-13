@@ -3,6 +3,39 @@
 
 <head>
 
+    <!-- Add jQuery library -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="./fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen">
+    <script type="text/javascript" src="./fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    <link rel="stylesheet" href="./fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen">
+    <script type="text/javascript" src="./fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="./fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+    <link rel="stylesheet" href="./fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen">
+    <script type="text/javascript" src="./fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".fancybox").fancybox({
+                helpers : {
+                    title: {
+                        type: 'inside'
+                    },
+                    overlay : {
+                        locked: false
+                    }               
+                }
+            });
+            $("selector").fancybox({
+                arrows : false
+            });
+        });
+    </script>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,7 +68,7 @@
                     <a href="index.html">Home</a>
                 </li>
 
-                    <li><a href="nielsen.html">Nielsen's Heuristics</a>
+                <li><a href="nielsen.html">Nielsen's Heuristics</a>
                 </li>
                 <li style="padding-left: 30px; background-color: #D3D3D3;">
                     <a href="visibility.html">Visibility</a>
@@ -83,25 +116,36 @@
 
                 <div class="row" id="overview">
                     <div class="col-md-4">
-                        <p>img</p>
+                    <a class="fancybox" href="./img/1_1.png"><img src="./img/1_1.png" alt="img 1" /></p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>Navigation efficiency throughout the site becomes increasing difficult with the single footer bar containing the main links redirecting visitors to the other repositories of the site. An added navigation bar at the top of the page -possibly a fixed header bar- would help users attend to their destinations within a shorter period of time (approximately within the 3 second window), as it is conventional for navigation bars to be placed either on the side of the page or on the top of the page. It is unusual for a page to have their navigation bar in the middle. Though it is not so unusual to place a navigation bar in the footer, it is not conventional to have the footer be a primary navigation tool.</p>
+                        </div>
                     </div>
-                    <div class="col-md-8">
-                        <p>analysis</p>
+
+                    <div class="row" id="overview">
+                        <div class="col-md-4">
+                            <a class="fancybox" href="./img/1_2.png"><img src="./img/1_2.png" alt="img 2" /></a>
+                        </div>
+                        <div class="col-md-8">
+                            <p>Visual organization of the system is not only inconsistent, but also hard to recognize and associate with the rest of the body of information available on the website. The adjacent pages of the system including, but not limited to: “University A-Z”, “Job Vacancies”, and “News & Events” are good references of the contrasting visual themes within the system.</p>
+                            <p>Key Examples:</p>
+                            <a href="http://www2.le.ac.uk/research/current-research">Current Research</a>
+                            <br/>
+                            <a href="http://www2.le.ac.uk/students?uol_r=763d5396">Students</a>
+                        </div>
                     </div>
+
                 </div>
             </div>
+            <!-- /#page-content-wrapper -->
+
         </div>
-        <!-- /#page-content-wrapper -->
+        <!-- /#wrapper -->
 
-    </div>
-    <!-- /#wrapper -->
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    </body>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-</body>
-
-</html>
+    </html>

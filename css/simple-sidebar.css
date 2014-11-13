@@ -6,6 +6,16 @@
 
 /* Toggle Styles */
 
+.col-md-4 img{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.col-lg-12 p{
+    font-size:1.25em;
+}
+
 #wrapper {
     padding-left: 0;
     -webkit-transition: all 0.5s ease;

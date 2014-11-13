@@ -17,6 +17,36 @@
     <!-- Bootstrap Core CSS -->
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
+    <!-- Add jQuery library -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="./fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen">
+    <script type="text/javascript" src="./fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    <link rel="stylesheet" href="./fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen">
+    <script type="text/javascript" src="./fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="./fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+    <link rel="stylesheet" href="./fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen">
+    <script type="text/javascript" src="./fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".fancybox").fancybox({
+                helpers : {
+                    title: {
+                        type: 'inside'
+                    },
+                    overlay : {
+                        locked: false
+                    }               
+                }
+            });
+        });
+    </script>
+
 </head>
 
 <body>
@@ -35,7 +65,7 @@
                     <a href="index.html">Home</a>
                 </li>
 
-                    <li><a href="nielsen.html">Nielsen's Heuristics</a>
+                <li><a href="nielsen.html">Nielsen's Heuristics</a>
                 </li>
                 <li style="padding-left: 30px;">
                     <a href="visibility.html">Visibility</a>
@@ -78,27 +108,48 @@
                     <div class="col-lg-12">
                         <h1>Match between system and the real world</h1>
                         <p>"The system should speak the users' language, with words, phrases and concepts familiar to the user, rather than system-oriented terms. Follow real-world conventions, making information appear in a natural and logical order." - Neilsen"
-</p>
+                        </p>
                     </div>
                 </div>
 
                 <div class="row" id="overview">
                     <div class="col-md-4">
-                        <p>img</p>
+                        <a class="fancybox" href="./img/2_1.png"><img src="./img/2_1.png" alt="img 1"/></a>
                     </div>
                     <div class="col-md-8">
-                        <p>analysis</p>
+                        <p>Most the wording on the University of Leicester website are user-friendly, using terms such as “Site Visitors”, “Staff & Students”, “Maps and Directions”. These are conventional terms used at most academic school websites. However, the word “prospectus”, used front and center on the homepage is not explained even when you click on the link. After some quick searching in the dictionary, it is clear that it is a catalogue about the school, but it is not a common term used in the US (though it may be in the UK). 
+                        </p>
                     </div>
                 </div>
+
+                <div class="row" id="overview">
+                    <div class="col-md-4">
+                        <a class="fancybox" href="./img/2_3.png"><img src="./img/2_3.png" alt="img 2"/></a>
+                    </div>
+                    <div class="col-md-8">
+                        <p>All of the sub-navigation bars within each section is also full of user-friendly terms that are common and easy to understand. The short header above each these sections also allows users to quickly glance at what the following links are about without having to read all of them. 
+                            Much of the information however does not show up in a natural and logical order when you go to that section. For example, in research (http://www.le.ac.uk/research/), it would be logical to place “Current Research” before “Our Global Challenges” because even though it may be important to know about the challenges they are facing, the reason people would click on Research to begin with would most likely be because they wanted to know about research at the university. 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row" id="overview">
+                    <div class="col-md-4">
+                        <a class="fancybox" href="./img/2_2.png"><img src="./img/2_2.png" alt=""></a>
+                    </div>
+                    <div class="col-md-8">
+                        <p>Another example would be in the Blackboard site (https://blackboard.le.ac.uk/), in which the log-in form is not on the middle-left, where users usually look first. Although there could be good questions asked, it makes sense that most people who are visiting this site are going to immediately log in first. 
+
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </div>
         <!-- /#page-content-wrapper -->
 
     </div>
     <!-- /#wrapper -->
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
