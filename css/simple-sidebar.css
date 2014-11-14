@@ -32,7 +32,7 @@
     z-index: 1000;
     position: fixed;
     left: 250px;
-    width: 0;
+    width: 260;
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
@@ -44,12 +44,12 @@
 }
 
 #wrapper.toggled #sidebar-wrapper {
-    width: 250px;
+    width: 260px;
 }
 
 #page-content-wrapper {
     width: 100%;
-    padding: 15px;
+    padding: 80px;
 }
 
 #wrapper.toggled #page-content-wrapper {
