@@ -21,6 +21,7 @@
     <script type="text/javascript">
         $(document).ready(function() {
             $(".fancybox").fancybox({
+                closeClick  : true,
                 helpers : {
                     title: {
                         type: 'inside'
@@ -66,7 +67,7 @@
                     <a href="index.html">Home</a>
                 </li>
 
-                    <li><a href="nielsen.html">Nielsen's Heuristics</a>
+                <li><a href="nielsen.html">Nielsen's Heuristics</a>
                 </li>
                 <li style="padding-left: 30px;">
                     <a href="visibility.html">Visibility</a>
@@ -114,23 +115,33 @@
 
                 <div class="row" id="overview">
                     <div class="col-md-4">
-                        <p>img</p>
+                        <a class="fancybox" href="./img/3_1.png"><img src="./img/3_1.png" alt="img 1" /></a>
                     </div>
                     <div class="col-md-8">
                         <p>The website is good at allowing the user to freely roam and be able to go back to their previous page, displaying a path on the top of each section for users to click on. For example, on (<a href="http://www2.le.ac.uk/research/current-research/global">http://www2.le.ac.uk/research/current-research/global</a>).
-Also, the user can always select the back button to go back to their previous page. Almost all of the interaction in the website does not open into a new window or tab. Every clickable link that does not lead to a social media website or email loads on the same tab, and therefore makes it easy to navigate back and forth. </p>
+                            Also, the user can always select the back button to go back to their previous page. Almost all of the interaction in the website does not open into a new window or tab. Every clickable link that does not lead to a social media website or email loads on the same tab, and therefore makes it easy to navigate back and forth. </p>
+                        </div>
                     </div>
+
+                    <div class="row" id="overview">
+                        <div class="col-md-4">
+                            <a class="fancybox" href="./img/3_2.png"><img src="./img/3_2.png" alt="img 1" /></a>
+                        </div>
+                        <div class="col-md-8">
+                            <p>On every page, there is also the University of Leicester’s logo displayed on the top left, along with a tab that says “University Home” which will always bring you back to the homepage, making it easy to navigate to other sections if need be.</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+            <!-- /#page-content-wrapper -->
+
         </div>
-        <!-- /#page-content-wrapper -->
+        <!-- /#wrapper -->
 
-    </div>
-    <!-- /#wrapper -->
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    </body>
 
-</body>
-
-</html>
+    </html>

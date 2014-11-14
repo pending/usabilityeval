@@ -21,6 +21,7 @@
     <script type="text/javascript">
         $(document).ready(function() {
             $(".fancybox").fancybox({
+                closeClick  : true,
                 helpers : {
                     title: {
                         type: 'inside'
@@ -65,7 +66,7 @@
                     <a href="index.html">Home</a>
                 </li>
 
-                    <li><a href="nielsen.html" style="background-color: #D3D3D3;">Nielsen's Heuristics</a>
+                <li><a href="nielsen.html" style="background-color: #D3D3D3;">Nielsen's Heuristics</a>
                 </li>
                 <li style="padding-left: 30px;">
                     <a href="visibility.html">Visibility</a>
@@ -120,13 +121,13 @@
                             <li><a href="visibility.html">Visibility of System Status</a></li>
                             <li><a href="match.html">Match Between System and the Real World</a></li>
                             <li><a href="usercontrol.html">User Control and Freedom</a></li>
+                            <li><a href="errorprevention.html">Error Prevention</a></li>
                             <li><a href="consistency.html">Consistency and Standards</a></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li><a href="recognization.html">Recognition Rather than Recall</a></li>
+                            <li><a href="efficiency.html">Flexibility and Efficiency of Use</a></li>
+                            <li><a href="aesthetics.html">Aesthetics and Minimalist Design</a></li>
+                            <li><a href="errorrecovery.html">Help users Recognize, Diagnose, and Recover from Erros</a></li>
+                            <li><a href="documentation.html">Documentation and Help</a></li>
                         </ol>
                     </div>
                 </div>
@@ -142,10 +143,10 @@
 
     <!-- Menu Toggle Script -->
     <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
     </script>
 
 </body>
